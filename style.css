@@ -2,11 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Lucida Handwriting;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 main{
     height: 100vh;
-    background-image: linear-gradient(green);
+    background-image: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,7 +42,7 @@ button{
     font-size: 0.8rem;
     text-transform: uppercase;
     border: none;
-    color: black;
+    color: white;
     background-image: linear-gradient(to right, #8e2de2, #4a00e0);
     box-shadow:  1px 1px 5px 1px #2d3436;
     margin-top: 20px;
