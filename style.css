@@ -42,7 +42,7 @@ button{
     font-size: 0.8rem;
     text-transform: uppercase;
     border: none;
-    color: white;
+    color: black;
     background-image: linear-gradient(to right, #8e2de2, #4a00e0);
     box-shadow:  1px 1px 5px 1px #2d3436;
     margin-top: 20px;
