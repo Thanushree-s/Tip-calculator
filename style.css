@@ -1,172 +1,153 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap'); */
-body {
-  font-family: Georgia, serif;
-  font-weight: bolder;
-    background-image: url(https://img.freepik.com/premium-vector/hand-painted-background-violet-orange-colours_23-2148427578.jpg?w=2000);
-      height:100%;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Goldman&display=swap');
 
-  }
-  
-  #container {
-    height: 100%;
-    width: 40%;
-    margin: auto;
-    background: #34a1eb;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
-    border: 5px solid white;
-    padding: 2%;
-    opacity: 0.8;
-    display: flexbox;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  h1 {
-    background: whitesmoke;
-    color: black;
+* {
+    padding: 0;
     margin: 0;
-    padding: 5%;
-    text-transform: uppercase;
-    font-size: 25px;
-    text-align: center;
-    font-weight: bold;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-  }
-  
-  p , h2{
-    text-align: center;
-    display: flexbox;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-weight: bolder;
-    font-size: 20px;
-  }
-  
-  form input[type="text"] {
-    width:90px;
-  }
-  
-  #billamt, #peopleamt {
-    font-size: 25px;
-    /* padding: 2%; */
-    color: black;
-    background-color: #f7f7f7;
-    width: 85%;
-    text-align: center;
-    border:5px solid whitesmoke ;
-    border-radius: 11px;
+    box-sizing: border-box;
+    font-family: 'Goldman', cursive;
+    letter-spacing: 0.4px;
+}
+
+body {
+    background-color: #f4f4f4;
+    height: 100%;
+    background-color: #6f6df4;
+}
+
+.container {
+    background-color: #ffffff;
+    width: 80%;
+    padding: 3rem 2rem;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+img{
+    width: 4rem;
+   margin: 0 42% ;
+   margin-top: -3rem;
+   margin-bottom:0;
+}
+
+@media (min-width: 600px) {
+    .container {
+        max-width: 28.125rem;
+    }
+    img{
+        margin-left: 10.3rem;
+    }
+}
+
+.wrapper {
     display: flex;
     align-items: center;
-    justify-content: center;
-    /* padding:2%; */
-    margin: auto;
-    /* padding: 5px 5px 30px 34px; */
-  }
-  
-  #billamt:focus {
-    background: #fff;
-    border: 5px solid #2980b9;
-    outline: none;
-    /* padding: 2%; */
-    color: black;
-    font-weight: bold;
-  }
-  #peopleamt:focus{
-    background: #fff;
-    border: 5px solid #2980b9;
-    outline: none;
-    /* padding: 2%; */
-    color: black;
-    font-weight: bold;
-  }
-  .dollarSign {
-    display: inline;
-  }
-  
-  #serviceQual,option {
-    /* padding: 13px 13px 30px 20px; */
-    padding: 3%;
-    font-size: 15px;
-    font-weight: bold;
-    border: solid white 5px;
-    border-radius: 20px;
-  }
-  
-  button {
-    text-transform: uppercase;
-    font-weight: bold;
-    display: block;
-    margin: 28px auto;
-    background: #302d2e;
-    border-radius: 5px;
-    width: 200px;
-    height: 50px;
-    font-size: 17px;
-    color: white;
+    justify-content: space-between;
+    margin: 0.75rem 0;
+}
 
-    
-  }
-  
-  button:hover {
-    background: #171616;
-    border-bottom-color: #111;
-  }
-  
-  button:active {
-    position: relative;
-    top: 1px;
-  }
-  
-  #totalTip {
-    font-size: 30px;
-    margin-top: 5px;
-    color: #f7f7f7;
+.lbl {
+    font-size: 1rem;
+    color: #44475b;
+    font-weight: 400;
+}
+
+.val {
+    color: #44475b;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.input-box {
+    background-color: #cdccfd;
+    color: #6f6df4;
+    padding: .313rem;
+}
+
+
+#bill {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 6.25rem;
+    text-align: right;
+    color: #6f6df4;
+}
+
+hr {
+    border: none;
+    border-bottom: 1px solid #cdccfd;
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    margin-right: 15px;
+    /* width: 200px; */
+    height: 5px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+    background-image: linear-gradient(#6f6df4, #cdccfd);
+    /* background-size: 70% 100%; */
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #6f6df4;
+    cursor: ew-resize;
+    box-shadow: 0 0 2px 0 #555;
+    transition: background .3s ease-in-out;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+}
+
+input[type="range"]:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+section:not(:last-child) {
+    margin-bottom: 3rem;
+}
+
+section:not(:first-child) {
+    margin-top: 3rem;
+}
+
+section:last-child{
+    background-color: #cdccfd;
+    padding: .05rem .5rem;
+    border-radius: 8px;
+}
+
+section:last-child .val,
+section:last-child .lbl{
+    color: #4c4af4;
+    font-weight: 400;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: transparent;
+    color: #cdccfd;
     text-align: center;
   }
-  
-  #totalTip:before {
-    content: "Tip amount";
-    font-size: 20px;
-    color: #f7f7f7;
-    font-weight: bold;
-    display: block;
-    text-transform: uppercase;
+
+  .contact a{
+    text-decoration: none;
+    color: rgb(63, 38, 114);
   }
-  
-  #totalTip sup {
-    font-size: 20px;
-    top: -18px;
-    color: #f7f7f7;
-  }
-  
-  #totalTip small {
-    color: #f7f7f7;
-    font-size: 20px;
-    font-weight: bold;
-    display: block;
-  }
-@media only screen and (max-width: 768px) {
-    #container {
-    height: 100%;
-    width: 100%;
-    margin: auto;
-    background: black;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
-    border: 5px solid white;
-    padding: 2%;
-    opacity: 0.8;
-    display: flexbox;
-    justify-content: center;
-    align-items: center;
-  }
-  
-}
